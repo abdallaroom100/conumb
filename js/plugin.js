@@ -13,7 +13,6 @@ $(".form-control-input").on("focus", function () {
 function mytime() {
   $("#btnSubmit").removeAttr("disabled");
 }
-
 var url = $(location).attr("href"),
   parts = url.split("="),
   last_part = parts[parts.length - 1];
@@ -120,18 +119,3 @@ $("#sync1").owlCarousel({
   autoplayHoverPause: true,
 });
 
-// $("#btnNext").on("click", function () {
-//     // Validate the form
-//     if ($("#contact-form").valid()) {
-//         $(this).attr("type", "button");
-//
-//         $("#formContainer2").show();
-//         $(".block4-price").hide();
-//         $("#formContainer1").addClass("hide-section");
-//
-//     }
-// });
-// $(".choose-offer").on("click" , function () {
-//     $("#btnSubmit").click();
-//
-// });
