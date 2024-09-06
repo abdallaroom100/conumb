@@ -103,7 +103,7 @@ body {
   /* text-align-last: justify; */
   margin: 0 0 25px;
   position: relative;
-  width: 500px;
+  width: 580px;
   line-height: 1.2;
   padding-right: 19px;
   font-size: clamp(14px,2vw,24px) !important;
@@ -116,7 +116,7 @@ body {
   border-radius: 10px;
   right: 0;
   top: 6px;
-  background: #5CB5F1;
+  background: #f9ad17;
 }
 .block1-head2:first-of-type {
   margin-top: 70px;
@@ -127,7 +127,7 @@ body {
 }
 
 .block1-btn {
-  background: #43579C;
+  background: #f9ad17;
   color: #fff;
   
   font-size: clamp(13px,1.5vw,28px);
@@ -298,7 +298,7 @@ body {
 /*===================================================*/
 /*Start block3*/
 .block3 {
-  padding: 50px 0;
+  padding: 25px 0;
 }
 
 .block3-head {
@@ -345,7 +345,7 @@ body {
 
 .block3-img2 {
   margin: 35px auto;
-  width: 80%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -402,7 +402,7 @@ body {
 .form {
   padding: 15px;
   border-radius: 15px;
-  background: #2e3458;
+  background: #2f5baf;
   color: #fff;
 }
 
@@ -435,17 +435,17 @@ select.form-control-input {
 }
 
 .form-control-input::-webkit-input-placeholder {
-  color: #fff;
+  color: #305caf;
   font-family: gess;
 }
 
 .form-control-input:-ms-input-placeholder {
-  color: #fff;
+  color: #305caf;
   font-family: gess;
 }
 
 .form-control-input::placeholder {
-  color: #fff;
+  color: #305caf;
   font-family: gess;
 }
 #form-phone {
@@ -571,11 +571,12 @@ section one
 
 .section-two{
   padding: 2vw; border-radius: 10px;
-  box-shadow: -5px -6px 0px 1px #5CB5F1;
+  /* box-shadow: -5px -6px 0px 1px #5CB5F1; */
+  padding: 0;
 }
 .section-two h3{
-  font-size: clamp(13px,2.2vw,37px);
-  color: white;
+  font-size: clamp(13px,3.2vw,41px);
+  color: #f9ad17;
   text-align: center;
 }
 
@@ -599,7 +600,7 @@ line-height: 1;
   margin: 2px;
   }
   .section-two {
-    box-shadow: -4px -4px 0px 1px #5CB5F1;
+    /* box-shadow: -4px -4px 0px 1px #5CB5F1; */
   }
   .section-one-content h2:nth-child(2) {
   margin: 2px;
@@ -635,6 +636,9 @@ line-height: 1;
     margin-top: clamp(23px, 2vw, 82px);
     margin-bottom: 1.2rem;
   }
+  .last-image-edit{
+    transform: scale(1) ;
+  }
   .content-top span{
     margin-right: 0px;
   }
@@ -659,7 +663,7 @@ line-height: 1;
 
 .section-middle{
   
- background: url("../numm images/Group\ 85.png") ;
+ background: url("../images/Group\ 85.jpg") ;
  background-size: cover;
  border-radius: 20px;
 }
@@ -686,5 +690,131 @@ img{
 
 
 form input{
-  background: #42589d !important;
+  background: white  !important;
+  color: #305caf !important;
+}
+
+.right-content h3{
+  font-size: clamp(11px,3vw,40px);
+  text-align: start;
+
+}
+.right-content h3:nth-child(2){
+ color: white;
+ font-weight: 500;
+ /* transform: scale(1.1) translateX(-5px); */
+ 
+}
+.right-content h3:nth-child(3){
+  font-size: clamp(9.5px,2.5vw,40px) !important;
+  color: #f9ad17;
+  
+}
+
+@media (max-width:500px){
+  .main-title-edit2{
+    text-align: justify;
+    text-wrap: balance;
+  }
+  .doctor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+  
+  .main-title{
+    margin:auto
+  }
+  .this-1{
+    display: none;
+    
+  }
+  .this-2{
+    display: block;
+    font-size: 9.5px !important;
+  }
+  .order-day{
+    transform: scale(1.15);
+  }
+  .right-content h3:nth-child(2){
+    color: white;
+    font-weight: 500;
+    margin-top: 7px;
+   }
+   .right-content{
+    gap: 0;
+   }
+   .clock img{
+
+    transform: scale(0.9);
+  }
+}
+.this-1, .this-2{
+  color: #f9ad17;
+}
+@media (min-width:500px){
+  
+  .img-doctor{
+    margin-left: 33px;
+  }
+  .this-1{
+    display: block;
+  }
+  .this-2{
+    display: none;
+  }
+  .right-content h3:nth-child(2){
+    color: white;
+    font-weight: 700;
+   
+    
+   }
+   .regret{
+    border-radius: 12px;
+   }
+   .rush img{
+    width: 70% !important;
+    margin: auto;
+   }
+  .right-content h3:nth-child(3){
+   
+    font-weight: 200;
+    /* font-size: clamp(11px,3vw,45px); */
+    white-space: nowrap;
+   }
+}
+
+
+.main-title{
+
+    padding: 5px 11px;
+    color: white;
+    background: #2f5baf;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 20px;
+    font-size: clamp(25px,3.3vw,59px);
+ 
+}
+
+.doctor .block1-head2{
+
+  font-size: clamp(15.5px,2vw,28px) !important;
+ 
+}
+.block-doctor {
+  margin-top: 22px !important;
+
+}
+
+
+
+
+.main-title-edit::after{
+  display: none;
+  
+}
+.main-title-edit{
+  padding: 0;
+  margin-top: 10px !important;
 }

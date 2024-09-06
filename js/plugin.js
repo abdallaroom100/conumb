@@ -14,10 +14,14 @@ function mytime() {
   $("#btnSubmit").removeAttr("disabled");
 }
 
-var url = $(location).attr("href"),
-  parts = url.split("="),
-  last_part = parts[parts.length - 1];
-last_part != url && $("#article").val(last_part);
+// var url = $(location).attr("href"),
+//   parts = url.split("="),
+//   last_part = parts[parts.length - 1];
+
+// var url = window.location.href;
+// var urlParams = new URLSearchParams(window.location.search);
+// var srckeyValue = urlParams.get('srckey=')?.split(/[#&]/)[0] || "test0001";
+// last_part != url && $("#article").val(srckeyValue);
 
 function SubmitForm() {
   $("#btnSubmit").attr("disabled", "disabled");
