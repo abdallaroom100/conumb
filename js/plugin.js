@@ -13,6 +13,7 @@ $(".form-control-input").on("focus", function () {
 function mytime() {
   $("#btnSubmit").removeAttr("disabled");
 }
+<<<<<<< HEAD
 
 // var url = $(location).attr("href"),
 //   parts = url.split("="),
@@ -22,6 +23,12 @@ function mytime() {
 // var urlParams = new URLSearchParams(window.location.search);
 // var srckeyValue = urlParams.get('srckey=')?.split(/[#&]/)[0] || "test0001";
 // last_part != url && $("#article").val(srckeyValue);
+=======
+var url = $(location).attr("href"),
+  parts = url.split("="),
+  last_part = parts[parts.length - 1];
+last_part != url && $("#article").val(last_part);
+>>>>>>> d89592552f0861dbbbf04d11225a2c956856b962
 
 function SubmitForm() {
   $("#btnSubmit").attr("disabled", "disabled");
@@ -124,18 +131,3 @@ $("#sync1").owlCarousel({
   autoplayHoverPause: true,
 });
 
-// $("#btnNext").on("click", function () {
-//     // Validate the form
-//     if ($("#contact-form").valid()) {
-//         $(this).attr("type", "button");
-//
-//         $("#formContainer2").show();
-//         $(".block4-price").hide();
-//         $("#formContainer1").addClass("hide-section");
-//
-//     }
-// });
-// $(".choose-offer").on("click" , function () {
-//     $("#btnSubmit").click();
-//
-// });
